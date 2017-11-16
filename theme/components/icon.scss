@@ -18,6 +18,9 @@ svg.ck-icon {
 	vertical-align: middle;
 	color: inherit;
 
+	// This will prevent blurry icons on Firefox. See #340.
+	will-change: transform;
+
 	// Inherit cursor style (#5).
 	cursor: inherit;
 
