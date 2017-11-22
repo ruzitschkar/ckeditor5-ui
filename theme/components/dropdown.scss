@@ -6,7 +6,8 @@
 	position: relative;
 
 	// A triangle displayed to indicate this is actually a dropdown.
-	&::after {
+	// Split button has it's own arrow
+	&:not(.ck-splitbutton-dropdown)::after {
 		content: '';
 		width: 0;
 		height: 0;
