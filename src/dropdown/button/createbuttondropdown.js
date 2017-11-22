@@ -10,7 +10,7 @@
 import createDropdown from '../createdropdown';
 
 import ButtonGroupView from '../../buttongroup/buttongroupview';
-import { closeDropdownOnBlur, closeDropdownOnExecute, openDropdownOnArrows } from '../utils';
+import { closeDropdownOnBlur, closeDropdownOnExecute, focusDropdownItemsOnArrows } from '../utils';
 
 /**
  * Creates an instance of {@link module:ui/dropdown/button/buttondropdownview~ButtonDropdownView} class using
@@ -94,7 +94,7 @@ export default function createButtonDropdown( model, buttonViews, locale ) {
 
 	closeDropdownOnBlur( dropdownView );
 	closeDropdownOnExecute( dropdownView, buttonGroupView.items );
-	openDropdownOnArrows( dropdownView, buttonGroupView );
+	focusDropdownItemsOnArrows( dropdownView, buttonGroupView );
 
 	return dropdownView;
 }
